@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Set background color to black */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.spotify-container {
+    max-width: 45%;
+    padding: 20px; /* Add padding */
+    background-color: orange; /* Set padding color to orange */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+.spotify-container iframe {
+    width: 100%;
+    margin-bottom: 0;
+}
+.chat-container {
+    max-width: 45%;
+    margin-left: 5%;
+}
+.chat-box {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    height: 250px;
+    overflow-y: scroll;
+    text-align: left;
+    margin-top: 0;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+}
+.chat-input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+    resize: none;
+}
+.send-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/* Added responsive styles */
+@media screen and (max-width: 600px) {
+    .spotify-container,
+    .chat-container {
+        max-width: 100%;
+        margin: 0;
+        float: none;
+    }
+}
